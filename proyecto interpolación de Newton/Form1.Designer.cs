@@ -42,6 +42,7 @@
             label3 = new Label();
             btnCalcular = new Button();
             btnLimpiar = new Button();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -163,11 +164,21 @@
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(454, 44);
+            label4.Name = "label4";
+            label4.Size = new Size(65, 24);
+            label4.TabIndex = 16;
+            label4.Text = "label4";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1384, 1060);
+            Controls.Add(label4);
             Controls.Add(btnLimpiar);
             Controls.Add(btnCalcular);
             Controls.Add(label3);
@@ -206,5 +217,6 @@
         private Label label3;
         private Button btnCalcular;
         private Button btnLimpiar;
+        private Label label4;
     }
 }
