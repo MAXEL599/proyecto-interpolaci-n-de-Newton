@@ -169,9 +169,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(454, 44);
             label4.Name = "label4";
-            label4.Size = new Size(65, 24);
+            label4.Size = new Size(322, 24);
             label4.TabIndex = 16;
-            label4.Text = "label4";
+            label4.Text = "proyecto interpolación de Newton";
             // 
             // Form1
             // 
