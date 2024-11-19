@@ -169,9 +169,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(454, 44);
             label4.Name = "label4";
-            label4.Size = new Size(322, 24);
+            label4.Size = new Size(241, 24);
             label4.TabIndex = 16;
-            label4.Text = "proyecto interpolación de Newton";
+            label4.Text = " Interpolación de Newton";
             // 
             // Form1
             // 
@@ -193,10 +193,11 @@
             Controls.Add(txtX2);
             Controls.Add(label2);
             Controls.Add(label1);
+            Enabled = false;
             Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(6, 4, 6, 4);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Interpolacion Newton";
             ResumeLayout(false);
             PerformLayout();
         }
