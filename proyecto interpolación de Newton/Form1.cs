@@ -53,6 +53,7 @@ namespace proyecto_interpolación_de_Newton
             return coeficientes;
         }
 
+
         private string ConstruirPolinomio(double[] coeficientes, List<double> x)
         {
             int n = coeficientes.Length;
