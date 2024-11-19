@@ -16,12 +16,11 @@ namespace proyecto_interpolación_de_Newton
             // Calcular las diferencias divididas
             double[] coeficientes = CalcularDiferenciasDivididas(xValues, yValues);
 
-            // Evaluar el polinomio en un punto dado (por ejemplo, en el primer punto)
-            double x = xValues[0];
-            double resultado = EvaluarPolinomio(coeficientes, xValues, x);
+            // Construir la representación del polinomio
+            string polinomio = ConstruirPolinomio(coeficientes, xValues);
 
             // Mostrar el resultado
-            txtResultado.Text = resultado.ToString();
+            txtResultado.Text = polinomio;
         }
 
         private double[] CalcularDiferenciasDivididas(List<double> x, List<double> y)
@@ -54,17 +53,21 @@ namespace proyecto_interpolación_de_Newton
             return coeficientes;
         }
 
-        private double EvaluarPolinomio(double[] coeficientes, List<double> x, double valor)
+        private string ConstruirPolinomio(double[] coeficientes, List<double> x)
         {
             int n = coeficientes.Length;
-            double resultado = coeficientes[n - 1];
+            string polinomio = coeficientes[0].ToString("F2");
 
-            for (int i = n - 2; i >= 0; i--)
+            for (int i = 1; i < n; i++)
             {
-                resultado = resultado * (valor - x[i]) + coeficientes[i];
+                polinomio += " + " + coeficientes[i].ToString("F2");
+                for (int j = 0; j < i; j++)
+                {
+                    polinomio += "(x - " + x[j].ToString("F2") + ")";
+                }
             }
 
-            return resultado;
+            return polinomio;
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
