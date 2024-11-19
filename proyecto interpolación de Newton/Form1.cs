@@ -46,6 +46,7 @@ namespace proyecto_interpolación_de_Newton
             // Extraer los coeficientes
             double[] coeficientes = new double[n];
             for (int i = 0; i < n; i++)
+
             {
                 coeficientes[i] = tabla[0, i];
             }
