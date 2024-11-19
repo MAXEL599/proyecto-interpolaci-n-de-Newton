@@ -1,3 +1,6 @@
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System;
+
 namespace proyecto_interpolación_de_Newton
 {
     public partial class Form1 : Form
@@ -6,6 +9,9 @@ namespace proyecto_interpolación_de_Newton
         {
             InitializeComponent();
         }
+
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
