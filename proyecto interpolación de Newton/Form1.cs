@@ -20,10 +20,10 @@ namespace proyecto_interpolación_de_Newton
             List<double> ValorY = new List<double> { double.Parse(txtY1.Text), double.Parse(txtY2.Text), double.Parse(txtY3.Text), double.Parse(txtY4.Text) };
 
             
-            double[] coeficientes = Calcular_Diferencia(ValorX, ValorY);
+            double[] coficientes = Calcular_Diferencia(ValorX, ValorY);
 
             
-            string polinomio = Polinomio(coeficientes, ValorX);
+            string polinomio = Polinomio(coficientes, ValorX);
 
             
             txtResultado.Text = polinomio;
@@ -50,25 +50,25 @@ namespace proyecto_interpolación_de_Newton
                 }
             }
 
-            double[] coeficientes = new double[n];
+            double[] coficientes = new double[n];
             for (int i = 0; i < n; i++)
 
             {
-                coeficientes[i] = tabla[0, i];
+                coficientes[i] = tabla[0, i];
             }
 
-            return coeficientes;
+            return coficientes;
         }
 
 
-        private string Polinomio(double[] coeficientes, List<double> x)
+        private string Polinomio(double[] coficientes, List<double> x)
         {
-            int n = coeficientes.Length;
-            string polinomio = coeficientes[0].ToString("F2");
+            int n = coficientes.Length;
+            string polinomio = coficientes[0].ToString("F2");
 
             for (int i = 1; i < n; i++)
             {
-                polinomio += " + " + coeficientes[i].ToString("F2");
+                polinomio += " + " + coficientes[i].ToString("F2");
                 for (int j = 0; j < i; j++)
                 {
                     polinomio += "(x - " + x[j].ToString("F2") + ")";
