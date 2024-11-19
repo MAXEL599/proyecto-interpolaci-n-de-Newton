@@ -30,18 +30,18 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
+            txtX2 = new TextBox();
+            txtY1 = new TextBox();
+            txtX1 = new TextBox();
+            txtY4 = new TextBox();
+            txtY2 = new TextBox();
+            txtY3 = new TextBox();
+            txtX4 = new TextBox();
+            txtX3 = new TextBox();
+            txtResultado = new TextBox();
             label3 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnCalcular = new Button();
+            btnLimpiar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -62,77 +62,77 @@
             label2.TabIndex = 2;
             label2.Text = "X";
             // 
-            // textBox1
+            // txtX2
             // 
-            textBox1.Location = new Point(153, 236);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(79, 38);
-            textBox1.TabIndex = 4;
+            txtX2.Location = new Point(153, 236);
+            txtX2.Multiline = true;
+            txtX2.Name = "txtX2";
+            txtX2.Size = new Size(79, 38);
+            txtX2.TabIndex = 4;
             // 
-            // textBox2
+            // txtY1
             // 
-            textBox2.Location = new Point(261, 162);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(79, 38);
-            textBox2.TabIndex = 5;
+            txtY1.Location = new Point(261, 162);
+            txtY1.Multiline = true;
+            txtY1.Name = "txtY1";
+            txtY1.Size = new Size(79, 38);
+            txtY1.TabIndex = 5;
             // 
-            // textBox3
+            // txtX1
             // 
-            textBox3.Location = new Point(153, 162);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(79, 38);
-            textBox3.TabIndex = 6;
+            txtX1.Location = new Point(153, 162);
+            txtX1.Multiline = true;
+            txtX1.Name = "txtX1";
+            txtX1.Size = new Size(79, 38);
+            txtX1.TabIndex = 6;
             // 
-            // textBox4
+            // txtY4
             // 
-            textBox4.Location = new Point(261, 408);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(79, 38);
-            textBox4.TabIndex = 7;
+            txtY4.Location = new Point(261, 367);
+            txtY4.Multiline = true;
+            txtY4.Name = "txtY4";
+            txtY4.Size = new Size(79, 38);
+            txtY4.TabIndex = 7;
             // 
-            // textBox5
+            // txtY2
             // 
-            textBox5.Location = new Point(261, 236);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(79, 38);
-            textBox5.TabIndex = 8;
+            txtY2.Location = new Point(261, 236);
+            txtY2.Multiline = true;
+            txtY2.Name = "txtY2";
+            txtY2.Size = new Size(79, 38);
+            txtY2.TabIndex = 8;
             // 
-            // textBox6
+            // txtY3
             // 
-            textBox6.Location = new Point(261, 315);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(79, 38);
-            textBox6.TabIndex = 9;
+            txtY3.Location = new Point(261, 300);
+            txtY3.Multiline = true;
+            txtY3.Name = "txtY3";
+            txtY3.Size = new Size(79, 38);
+            txtY3.TabIndex = 9;
             // 
-            // textBox7
+            // txtX4
             // 
-            textBox7.Location = new Point(153, 408);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(79, 38);
-            textBox7.TabIndex = 10;
+            txtX4.Location = new Point(153, 367);
+            txtX4.Multiline = true;
+            txtX4.Name = "txtX4";
+            txtX4.Size = new Size(79, 38);
+            txtX4.TabIndex = 10;
             // 
-            // textBox8
+            // txtX3
             // 
-            textBox8.Location = new Point(153, 315);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(79, 38);
-            textBox8.TabIndex = 11;
+            txtX3.Location = new Point(153, 300);
+            txtX3.Multiline = true;
+            txtX3.Name = "txtX3";
+            txtX3.Size = new Size(79, 38);
+            txtX3.TabIndex = 11;
             // 
-            // textBox9
+            // txtResultado
             // 
-            textBox9.Location = new Point(538, 379);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(512, 176);
-            textBox9.TabIndex = 12;
+            txtResultado.Location = new Point(538, 379);
+            txtResultado.Multiline = true;
+            txtResultado.Name = "txtResultado";
+            txtResultado.Size = new Size(512, 176);
+            txtResultado.TabIndex = 12;
             // 
             // label3
             // 
@@ -143,41 +143,43 @@
             label3.TabIndex = 13;
             label3.Text = "RESULTADO";
             // 
-            // button1
+            // btnCalcular
             // 
-            button1.Location = new Point(649, 140);
-            button1.Name = "button1";
-            button1.Size = new Size(240, 60);
-            button1.TabIndex = 14;
-            button1.Text = "calcular";
-            button1.UseVisualStyleBackColor = true;
+            btnCalcular.Location = new Point(649, 140);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(240, 60);
+            btnCalcular.TabIndex = 14;
+            btnCalcular.Text = "calcular";
+            btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += button1_Click;
             // 
-            // button2
+            // btnLimpiar
             // 
-            button2.Location = new Point(649, 236);
-            button2.Name = "button2";
-            button2.Size = new Size(240, 60);
-            button2.TabIndex = 15;
-            button2.Text = "LIMIPIAR  DATOS";
-            button2.UseVisualStyleBackColor = true;
+            btnLimpiar.Location = new Point(649, 236);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(240, 60);
+            btnLimpiar.TabIndex = 15;
+            btnLimpiar.Text = "LIMIPIAR  DATOS";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1384, 1060);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnCalcular);
             Controls.Add(label3);
-            Controls.Add(textBox9);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtResultado);
+            Controls.Add(txtX3);
+            Controls.Add(txtX4);
+            Controls.Add(txtY3);
+            Controls.Add(txtY2);
+            Controls.Add(txtY4);
+            Controls.Add(txtX1);
+            Controls.Add(txtY1);
+            Controls.Add(txtX2);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -192,17 +194,17 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
+        private TextBox txtX2;
+        private TextBox txtY1;
+        private TextBox txtX1;
+        private TextBox txtY4;
+        private TextBox txtY2;
+        private TextBox txtY3;
+        private TextBox txtX4;
+        private TextBox txtX3;
+        private TextBox txtResultado;
         private Label label3;
-        private Button button1;
-        private Button button2;
+        private Button btnCalcular;
+        private Button btnLimpiar;
     }
 }
