@@ -193,7 +193,6 @@
             Controls.Add(txtX2);
             Controls.Add(label2);
             Controls.Add(label1);
-            Enabled = false;
             Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(6, 4, 6, 4);
             Name = "Form1";

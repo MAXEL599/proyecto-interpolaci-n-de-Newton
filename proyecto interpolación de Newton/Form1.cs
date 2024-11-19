@@ -15,32 +15,33 @@ namespace proyecto_interpolación_de_Newton
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Obtener los datos de entrada
-            List<double> xValues = new List<double> { double.Parse(txtX1.Text), double.Parse(txtX2.Text), double.Parse(txtX3.Text), double.Parse(txtX4.Text) };
-            List<double> yValues = new List<double> { double.Parse(txtY1.Text), double.Parse(txtY2.Text), double.Parse(txtY3.Text), double.Parse(txtY4.Text) };
+            
+            List<double> ValorX = new List<double> { double.Parse(txtX1.Text),double.Parse(txtX2.Text), double.Parse(txtX3.Text), double.Parse(txtX4.Text)  };
+            List<double> ValorY = new List<double> { double.Parse(txtY1.Text), double.Parse(txtY2.Text), double.Parse(txtY3.Text), double.Parse(txtY4.Text) };
 
-            // Calcular las diferencias divididas
-            double[] coeficientes = CalcularDiferenciasDivididas(xValues, yValues);
+            
+            double[] coeficientes = Calcular_Diferencia(ValorX, ValorY);
 
-            // Construir la representación del polinomio
-            string polinomio = ConstruirPolinomio(coeficientes, xValues);
+            
+            string polinomio = Polinomio(coeficientes, ValorX);
 
-            // Mostrar el resultado
+            
             txtResultado.Text = polinomio;
+
         }
 
-        private double[] CalcularDiferenciasDivididas(List<double> x, List<double> y)
+        private double[] Calcular_Diferencia(List<double> x, List<double> y)
         {
             int n = x.Count;
             double[,] tabla = new double[n, n];
 
-            // Inicializar la primera columna con los valores de y
+          
             for (int i = 0; i < n; i++) 
             {
                 tabla[i, 0] = y[i];
             }
 
-            // Calcular las diferencias divididas
+           
             for (int j = 1; j < n; j++)
             {
                 for (int i = 0; i < n - j; i++)
@@ -49,7 +50,6 @@ namespace proyecto_interpolación_de_Newton
                 }
             }
 
-            // Extraer los coeficientes
             double[] coeficientes = new double[n];
             for (int i = 0; i < n; i++)
 
@@ -61,7 +61,7 @@ namespace proyecto_interpolación_de_Newton
         }
 
 
-        private string ConstruirPolinomio(double[] coeficientes, List<double> x)
+        private string Polinomio(double[] coeficientes, List<double> x)
         {
             int n = coeficientes.Length;
             string polinomio = coeficientes[0].ToString("F2");
