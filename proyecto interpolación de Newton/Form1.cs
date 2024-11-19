@@ -35,7 +35,7 @@ namespace proyecto_interpolación_de_Newton
             double[,] tabla = new double[n, n];
 
             // Inicializar la primera columna con los valores de y
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++) 
             {
                 tabla[i, 0] = y[i];
             }
