@@ -3,10 +3,20 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <RootNamespace>proyecto_interpolación_de_Newton</RootNamespace>
+    <RootNamespace>Interpolación_de_Newton</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>math_book_school_study_icon_209279.ico</ApplicationIcon>
+    <Version>1.0</Version>
+    <Title>Interpolacion de newton </Title>
+    <Authors>Carlos Uruchurtu y Mario Edil </Authors>
+    <Company>INSOFTEC</Company>
+    <Product>interpolacion de newton </Product>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="math_book_school_study_icon_209279.ico" />
+  </ItemGroup>
 
 </Project>
